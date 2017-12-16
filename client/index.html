@@ -7,15 +7,21 @@
 	<meta name="description" content="">
 	<meta name="author" content="oleg yanchinskiy">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
- 	<div>
- 		<label for="your-age">How old are you?</label>
- 		<input id="your-age" type="text" tabindex="1">
-		<div class="age-results"></div>
- 	</div>
+	<p>The penalty of procrastination is the loss of hopes and dreams. Every life has a deadline. View yours with this simple app. Inspired by <a href="https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator" taget="_blank">Tim Urban’s Ted Talk</a> and the corresponding <a href="https://www.waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html" taget="_blank">blog post</a> - <span style="font-style:italic;">Why Procrastinators Procrastinate.</span>
+	</p>
+	<div class="top-container">
+		<label for="your-age">What's your age?</label>
+		<input id="your-age" class="age-input" type="text" tabindex="1">
+		<div class="filters"></div>
+	</div>
+	
+ 	<div class="age-results"></div>
+ 	<script src="js/app-constants.js"></script>
  	<script src="js/scripts.js"></script>
 </body>
 </html>

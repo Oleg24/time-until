@@ -2,15 +2,44 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: 'Raleway', sans-serif;
+	padding: 20px;
 }
 
+p{
+	line-height: 1.5;
+}
+
+a{
+	color: dodgerblue;
+	text-decoration: none;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.top-container{
+	/*padding: 10px;*/
+}
+
+.filters{
+	margin-top: 15px; 
+}
 
 .age-results{
-	width: 500px;
 	display: flex;
 	justify-content: flex-start;
 	flex-flow: row wrap;
 	padding: 20px;
+}
+
+.age-input {
+	border: none;
+	border-bottom: 2px solid black;
+	text-align: center;
+	font-size: 14px;
+	width: 50px;
 }
 
 .box {
@@ -26,4 +55,22 @@ body {
 
 .bg-white{
 	background-color: white;
+}
+
+.time-filter {
+	margin-right: 10px;
+}
+
+.time-filter:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.time-filter.active {
+	text-decoration: underline;
+	color: dodgerblue;
+}
+
+.time-filter.active:hover{
+	cursor: default;
 }
